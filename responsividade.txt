@@ -1,0 +1,22 @@
+Elaborar design com essas configurações de referência:
+
+Desktop: grid 12 colunas
+Tablets: grid 8 colunas
+Mobile: grid 4 colunas
+
+breakpoints
+
+mobile:
+- telas pequenas: 480px
+- telas médias: 576px (qualquer medida menor é mobile)
+
+tablet:
+- telas pequenas: 576px até 768px
+- telas médias: 768px até 992px
+
+desktop:
+- pequenos: 992px até 1200px
+- médios: 1200px até 1400px
+- grandes: acima de 1400px
+
+ESTUDAR GRID LAYOUT

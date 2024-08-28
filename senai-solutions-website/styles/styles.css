@@ -1,0 +1,30 @@
+@import url(index.css);
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
+
+/* CSS Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: 0;
+}
+
+body {
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: "Old Standard TT", serif;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
