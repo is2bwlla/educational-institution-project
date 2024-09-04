@@ -1,0 +1,98 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+}
+
+#banner {
+    width: 100%;
+    position: relative;
+}
+
+#banner-home {
+    width: 100%;
+    filter: brightness(50%);
+}
+
+#title-banner-home {
+    position: absolute;  /* para ficar por cima do banner */
+    top: 55%;  /* para alinhar na onde da imagem eu quero que o texto fique */
+    color: #fff;
+    font-size: 17px;
+    margin-left: 3%;
+}
+
+#text-banner-home {
+    position: absolute;
+    top: 72%;
+    color: #fff;
+    font-size: 18px;
+    margin-left: 3%;
+    line-height: 1; /* define o espaçamento entre as linhas de um texto */
+}
+
+#second-title-home {
+    position: absolute;
+    top: 86%;
+    background-color: #294B3A;
+    display: flex;
+    width: 60%;
+    padding: 4%;
+    right: 0; /* alinha o elemento ao final da página ou contêiner */
+    color: #fff;
+    font-size: 15px;
+}
+
+#img-sobre-nos {
+    margin-top: 75px;
+    width: 70%;
+    filter: brightness(70%);
+}
+
+#text-about-us-home {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 15px;
+    text-align: end;
+    text-align: justify;
+}
+
+#span-text-about-us {
+    width: 90%;
+}
+
+#citation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+hr {
+    align-self: center;
+    width: 65%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+#icon-double-quotes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#double-quotes {
+    margin-bottom: 15px;
+}
+
+#author-text {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
