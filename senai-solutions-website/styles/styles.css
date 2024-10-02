@@ -36,3 +36,10 @@ table {
 	max-width: 100vw;
 	overflow-x: hidden;
 }
+
+@media (min-width: 769px) {
+	.container {
+		max-width: 80%;
+		margin: 0 auto; 
+	}
+}

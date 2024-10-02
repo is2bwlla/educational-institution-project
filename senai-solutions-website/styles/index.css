@@ -1,10 +1,15 @@
-/* BANNER DO TOPO */
-
 .header {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
+
+.logo-ss {
+    width: auto;
+    height: auto;
+}
+
+/* BANNER DO TOPO */
 
 #presentation {
     display: flex;
@@ -29,6 +34,8 @@
     color: #fff;
     font-size: 17px;
     margin-left: 3%;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #text-banner-home {
@@ -45,11 +52,12 @@
     top: 86%;
     background-color: #294B3A;
     display: flex;
-    width: 60%;
+    width: 55%;
     padding: 4%;
     right: 0; /* alinha o elemento ao final da página ou contêiner */
     color: #fff;
-    font-size: 15px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* SOBRE NÓS */
@@ -124,25 +132,17 @@ hr {
     text-align: justify;
 }
 
-/* CARROSSEL DE PROJETOS */
-
 .carousel {
-    overflow: hidden;
-    width: 100vw;
-    position: relative;
     margin-bottom: 15px;
     margin-top: 15px;
 }
 
 .carousel-inner {
     display: flex;
-    transition: transform 0.3s ease;
 }
 
 .card-carousel {
-    min-width: 44%;
     padding: 20px;
-    text-align: center;
     background-color: #274E3F;
     color: #fff;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
@@ -162,4 +162,248 @@ button {
 button:hover {
     background-color: #fff;
     color: #274E3F;
+}
+
+#values {
+    display: flex;
+    justify-content: center;
+}
+
+/* Container da timeline */
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+    background-image: url(/images/values.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.timeline-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    position: relative;
+    width: 100%;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: #294B3A; /* Linha central */
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.timeline-item .timeline-dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 3px solid #294B3A; /* Cor dos pontos */
+    border-radius: 50%;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.timeline-item .timeline-content {
+    background-color: #294B3A;
+    color: white;
+    padding: 20px;
+    width: 50%;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajuste para o lado esquerdo */
+.timeline-item.left .timeline-content {
+    margin-right: auto;
+    text-align: right;
+}
+
+/* Ajuste para o lado direito */
+.timeline-item.right .timeline-content {
+    margin-left: auto;
+    text-align: left;
+}
+
+footer {
+    background-color: #274E3F;
+    padding: 20px;
+    
+}
+
+.footer {
+    display: inline-flex;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-left: 100px;
+}
+
+#mobile-menu {
+    position: absolute;
+    top: 60px; /* ajuste conforme necessário */
+    right: 0;
+    background-color: #274E3F;
+    color: white;
+    width: 200px; /* ajuste conforme necessário */
+    z-index: 10;
+}
+
+#mobile-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#mobile-menu li {
+    padding: 10px;
+    text-align: center;
+}
+
+#mobile-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+
+@media (max-width: 912px) {
+    #img-projects,
+    #text-projects-home, 
+    .carousel,
+    .timeline-container {
+        display: none; 
+    }
+}
+
+
+@media (min-width: 769px) {
+
+    /* NAVBAR */
+    .header {
+        max-width: 100vw;
+        height: auto;
+    }
+
+    .logo-ss {
+        width: 13%;
+    }
+
+    .menu-hamburger {
+        display: none;
+    }
+
+    /* BANNER */
+    #title-banner-home {
+        font-size: 35px;
+        top: 71%;
+    }
+
+    #text-banner-home {
+        font-size: 25px;
+        top: 83%;
+    }
+
+    #second-title-home {
+        font-size: 25px;
+        width: 40%;
+        top: 90%;
+    }
+
+    /* INFORMAÇÕES (SOBRE NÓS E PROJETOS) */
+    #img-sobre-nos {
+        margin-top: 130px;
+        width: 60%;
+    }
+
+    #img-projects {
+        width: 60%;
+    }
+
+    #text-about-us-home, #text-projects-home {
+        font-size: 25px;
+        margin-top: 25px;
+    }
+
+    #span-text-about-us, #span-text-projects {
+        width: 90%;
+        font-size: 22px;
+    }
+
+    /* CITAÇÃO */
+
+    hr {
+        width: 80%;
+    }
+
+    #double-quotes {
+        width: 1.7%;
+    }
+
+    #author-text {
+        font-size: 24px;
+    }
+
+    #name-author {
+        font-size: 20px;
+    }
+    
+    /* VALORES */
+    .timeline-container {
+        background-image: url(/images/values-media.jpg);
+        background-size: cover;
+    }
+
+    .timeline-item {
+        display: flex;
+        justify-content: center;
+    }
+
+    .timeline-content {
+        font-size: 20px;
+    }
+
+    .timeline-title {
+        font-size: 35px;
+        color: #fff;
+    }
+
+    .timeline-item::before {
+        left: 50%;
+    }
+
+    /* FOOTER */
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 60px 0;
+    }
 }
