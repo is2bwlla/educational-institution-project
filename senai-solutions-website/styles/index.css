@@ -1,3 +1,5 @@
+/* NAVBAR */
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -7,6 +9,43 @@
 .logo-ss {
     width: auto;
     height: auto;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-left: 100px;
+}
+
+#mobile-menu {
+    position: absolute;
+    top: 32px; 
+    right: 0;
+    background-color: #274E3F;
+    color: white;
+    width: 200px;
+    z-index: 10;
+    border-radius: 10px;
+}
+
+#mobile-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#mobile-menu li {
+    padding: 10px;
+    text-align: center;
+}
+
+#mobile-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
 }
 
 /* BANNER DO TOPO */
@@ -258,42 +297,6 @@ footer {
     display: inline-flex;
 }
 
-.links {
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-    margin-left: 100px;
-}
-
-#mobile-menu {
-    position: absolute;
-    top: 60px; /* ajuste conforme necessário */
-    right: 0;
-    background-color: #274E3F;
-    color: white;
-    width: 200px; /* ajuste conforme necessário */
-    z-index: 10;
-}
-
-#mobile-menu ul {
-    list-style: none;
-    padding: 0;
-}
-
-#mobile-menu li {
-    padding: 10px;
-    text-align: center;
-}
-
-#mobile-menu a {
-    color: white;
-    text-decoration: none;
-}
-
-.hidden {
-    display: none;
-}
-
 
 @media (max-width: 912px) {
     #img-projects,
@@ -405,5 +408,9 @@ footer {
         display: flex;
         justify-content: space-between;
         margin: 10px 60px 0;
+    }
+
+    .link-footer {
+        cursor: pointer;
     }
 }
